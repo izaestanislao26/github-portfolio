@@ -3,159 +3,472 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kriza Ann Estanislao - Content Editor Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #fff;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #f0f0f0;
-        }
-
-        .header h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-
-        .header .subtitle {
-            font-size: 1.2rem;
-            color: #7f8c8d;
-            font-style: italic;
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .section h2 {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            border-left: 4px solid #3498db;
-            padding-left: 15px;
-        }
-
-        .section p {
-            font-size: 1.1rem;
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-
-        .portfolio-item {
-            background-color: #f8f9fa;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #3498db;
-        }
-
-        .portfolio-item h3 {
-            font-size: 1.3rem;
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-
-        .portfolio-item .project {
-            font-weight: bold;
-            color: #34495e;
-            margin-bottom: 8px;
-        }
-
-        .portfolio-item .description {
-            color: #555;
-            line-height: 1.5;
-        }
-
-        .contact-info {
-            background-color: #ecf0f1;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .contact-info a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        .italic {
-            font-style: italic;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 15px;
-            }
-            
-            .header h1 {
-                font-size: 2rem;
-            }
-            
-            .section h2 {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
+    <title>Kriza Ann Estanislao - Professional Content Editor</title>
+    <meta name="description" content="Professional content editor specializing in legal documents, manuscripts, and comprehensive content refinement.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Kriza Ann Estanislao</h1>
-        <p class="subtitle">Content Editor Portfolio</p>
-    </div>
-
-    <div class="section">
-        <h2>About Me</h2>
-        <p>I'm a professional content editor who thrives on precision and clarity. With a strong background in refining manuscripts, legal documents and other types of content. My expertise includes working with <span class="italic">Halsbury's Laws of Australia</span> and <span class="italic">Pacific Law Reports</span>. Due to confidentiality agreements, I am unable to disclose specific files or detailed content from these projects. However, I can provide an overview of my skills and the type of work I perform.</p>
-    </div>
-
-    <div class="section">
-        <h2>Portfolio Highlights</h2>
-        
-        <div class="portfolio-item">
-            <h3>Legal Editing: <span class="italic">Halsbury's Laws of Australia</span></h3>
-            <div class="project">Project: Editing chapters or guide cards on various legal topics.</div>
-            <div class="description">Worked on refining legal terminology, improving clarity and ensuring compliance with legal formatting standards for comprehensive legal texts.</div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Kriza Ann Estanislao</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
+    </nav>
 
-        <div class="portfolio-item">
-            <h3>Legal Editing: <span class="italic">Pacific Law Reports</span></h3>
-            <div class="project">Project: Editing case summaries and court judgments.</div>
-            <div class="description">Focused on summarizing case details accurately and ensuring readability for legal case reports.</div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Professional Content Editor</h1>
+                <p class="hero-subtitle">Precision • Clarity • Excellence</p>
+                <p class="hero-description">
+                    Specializing in legal documents, manuscripts, and comprehensive content refinement. 
+                    Delivering meticulous editing services with a focus on accuracy and readability.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-placeholder">
+                    <i class="fas fa-edit"></i>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <p>For inquiries or to discuss potential projects, please contact me at:</p>
-            <p><a href="mailto:izaestanislao@gmail.com">izaestanislao@gmail.com</a></p>
-            <p><a href="https://linkedin.com/in/kriza-ann-estanislao-lpt-1708b3284" target="_blank">linkedin.com/in/kriza-ann-estanislao-lpt-1708b3284</a></p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Professional Content Editor</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm a professional content editor who thrives on precision and clarity. With a strong background 
+                        in refining manuscripts, legal documents and other types of content. My expertise includes working 
+                        with <em>Halsbury's Laws of Australia</em> and <em>Pacific Law Reports</em>.
+                    </p>
+                    <p class="about-description">
+                        Due to confidentiality agreements, I am unable to disclose specific files or detailed content 
+                        from these projects. However, I can provide an overview of my skills and the type of work I perform.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portfolio Highlights</h2>
+                <p class="section-subtitle">Recent Work & Projects</p>
+            </div>
+            
+            <!-- Legal Editing Projects -->
+            <div class="portfolio-category">
+                <h3 class="category-title">Legal Content Editing</h3>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3 class="portfolio-title">Legal Editing: <em>Halsbury's Laws of Australia</em></h3>
+                        <p class="portfolio-project">Editing chapters or guide cards on various legal topics.</p>
+                        <p class="portfolio-description">
+                            Worked on refining legal terminology, improving clarity and ensuring compliance 
+                            with legal formatting standards for comprehensive legal texts.
+                        </p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Legal Documentation</span>
+                            <span class="tag">Terminology</span>
+                            <span class="tag">Compliance</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3 class="portfolio-title">Legal Editing: <em>Pacific Law Reports</em></h3>
+                        <p class="portfolio-project">Editing case summaries and court judgments.</p>
+                        <p class="portfolio-description">
+                            Focused on summarizing case details accurately and ensuring readability 
+                            for legal case reports.
+                        </p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Case Summaries</span>
+                            <span class="tag">Court Judgments</span>
+                            <span class="tag">Readability</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instructional Design Projects -->
+            <div class="portfolio-category">
+                <h3 class="category-title">Instructional Design & Educational Content</h3>
+                <div class="instructional-design-project">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">EM6 - Language Learning Materials Development</h3>
+                            <p class="project-institution">Bestlink College of the Philippines - College of Teacher Education Department</p>
+                            <p class="project-description">
+                                Comprehensive instructional design project creating 18 complete learning modules 
+                                for Language Learning Materials Development course. Each module includes front pages, 
+                                detailed content, answer keys, and assessment materials.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="modules-container">
+                        <h4 class="modules-title">Complete Module Series (18 Modules)</h4>
+                        <div class="modules-grid">
+                            <!-- Modules 1-6 (Prelim) -->
+                            <div class="module-group">
+                                <h5 class="group-title">Preliminary Modules (1-6)</h5>
+                                <div class="module-links">
+                                    <a href="https://drive.google.com/file/d/1rqErkcTt7QDVVOSdy-nKS7Pirr5HuDHY/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-book"></i> Course Cover
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1CAp-8EntCKn8IiapFHDkR083vhuJz7et/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-pdf"></i> Module 1 - Front Page
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1tCUi6LPk0Z-s9DPwEfN8qTeNAPi3_9t7/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-alt"></i> Module 1 - Content
+                                    </a>
+                                    <a href="https://docs.google.com/document/d/101KQFrdZex70DHNTuHiARi6cLqw2-Otc/edit?usp=drive_link&ouid=113325285993240770752&rtpof=true&sd=true" target="_blank" class="module-link">
+                                        <i class="fas fa-key"></i> Module 1 - Answer Key
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/19nDzv8s7T3zMKnJWDvdrS4VU7b8QxNSh/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-pdf"></i> Module 2 - Front Page
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/11f8NWj9uIYYmIvTWOVvkg5Zwnmbl97eJ/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-alt"></i> Module 2 - Content
+                                    </a>
+                                    <a href="https://docs.google.com/document/d/1zOPSpb-7GxjhAuzLrdLzV5a0P7t4Jm26/edit?usp=drive_link&ouid=113325285993240770752&rtpof=true&sd=true" target="_blank" class="module-link">
+                                        <i class="fas fa-key"></i> Module 2 - Answer Key
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1hrAnC_JQ4mQATExJbPrWtXb7jlWicIv9/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-pdf"></i> Module 3 - Front Page
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/10FcZfZqylIYab3OHgd-CsBZ_EwnnCIKs/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-alt"></i> Module 3 - Content
+                                    </a>
+                                    <a href="https://docs.google.com/document/d/1f6yTmxWV1nC8loYeeKe1RGEagWJvKBYM/edit?usp=drive_link&ouid=113325285993240770752&rtpof=true&sd=true" target="_blank" class="module-link">
+                                        <i class="fas fa-key"></i> Module 3 - Answer Key
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1P9JFy9Ws3aQ0IHEqiOLxclFPfR0aK0kb/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-pdf"></i> Module 4 - Front Page
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1Cx1wWC77tEgoo7AJPfKjn7Nfhk3V-60U/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-alt"></i> Module 4 - Content
+                                    </a>
+                                    <a href="https://docs.google.com/document/d/198JvnnsXZjYmANTNd4zgIeHpa9NAUHuQ/edit?usp=drive_link&ouid=113325285993240770752&rtpof=true&sd=true" target="_blank" class="module-link">
+                                        <i class="fas fa-key"></i> Module 4 - Answer Key
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1GO6cg2CY8PMh_StzA-XYnRJJ8hwJF5Fj/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-pdf"></i> Module 5 - Front Page
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1aU046AtoKKhzmJo3nazk7p1xxnV1Agqu/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-alt"></i> Module 5 - Content
+                                    </a>
+                                    <a href="https://docs.google.com/document/d/1xeek2qrAHneUP97haZifNl6YlEYJtsE4/edit?usp=drive_link&ouid=113325285993240770752&rtpof=true&sd=true" target="_blank" class="module-link">
+                                        <i class="fas fa-key"></i> Module 5 - Answer Key
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/117EKqXSyMKM4Qn2gF9QNeUtXcJcgiLk2/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-clipboard-check"></i> Module 6 - Prelim Exam
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1CDLecCROerW4TiKy5AmnibwOxs5xc5Ix/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-key"></i> Module 6 - Exam Answer Key
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Modules 7-12 (Midterm) -->
+                            <div class="module-group">
+                                <h5 class="group-title">Midterm Modules (7-12)</h5>
+                                <div class="module-links">
+                                    <a href="https://drive.google.com/file/d/1cfqWK06dsE3qEE0jpm5MNLIymx7mbXKV/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-pdf"></i> Module 7 - Front Page
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1d-cixo_bTygfeCVmOI9uxWcCldjrYIXA/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-alt"></i> Module 7 - Content
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/15ePzcLJoY-iv3qWj5W4UFB8pCIuCoUWb/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-key"></i> Module 7 - Answer Key
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/13rvwwlfoCFtj6bqXLLr2YfIhMaUeJSB0/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-pdf"></i> Module 8 - Front Page
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1-tIFpFXPQIYpTJ10whESk8QMgaDOklDl/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-alt"></i> Module 8 - Content
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1NPiOLfWjc_fNV2NwCGLseUyRsM61VGZH/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-key"></i> Module 8 - Answer Key
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1ze7r-x7CCxNLnsf89VBYv448RsmmulAg/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-pdf"></i> Module 9 - Front Page
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1RODpxVVnpX8yTvMEmQF6MFV-EKfkCsmN/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-alt"></i> Module 9 - Content
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1qt8Bch754hbbND4ib46_AGhfeQQVcNeD/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-key"></i> Module 9 - Answer Key
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1DtfGxxSIqlzU3dpsCmEzxESuIfYAeObS/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-pdf"></i> Module 10 - Front Page
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1iPaegYL7FqSrDzDRDAPiRz4uiYVIqR8C/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-alt"></i> Module 10 - Content
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/17Rn07rJjtBYB8vvCu93SMkcE04skg381/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-key"></i> Module 10 - Answer Key
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1AwhR_K4qevaVc_Hjo9fAzYtZYIDGZEs2/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-pdf"></i> Module 11 - Front Page
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/14yFcHtl2IZRUIlqETQiTSxOu4lFiaNBO/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-alt"></i> Module 11 - Content
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1-LaOzwVOfDpPjFteuxvN6XrypULjjgVw/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-key"></i> Module 11 - Answer Key
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1Fw7nzBeCpTHqH3D2oDVo7UmA_Lufa8b8/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-clipboard-check"></i> Module 12 - Midterm Exam
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Modules 13-18 (Final) -->
+                            <div class="module-group">
+                                <h5 class="group-title">Final Modules (13-18)</h5>
+                                <div class="module-links">
+                                    <a href="https://drive.google.com/file/d/1wM2GxKCPchE3cTDmudjd8Egvuo8RUc1j/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-pdf"></i> Module 13 - Front Page
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/13RwuNduV2nCnfcueLqVzNKrItT-lqmL7/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-alt"></i> Module 13 - Content
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1Od-LtlupAwLNpjVhZwdwBsC3ENZIT3s2/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-key"></i> Module 13 - Answer Key
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1w99I3NHR_lDf-q_-S_MWfCP0qaVizLbo/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-pdf"></i> Module 14 - Front Page
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1oe1vQy5ljiZJw7ujuheiCT9KckDOPWmx/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-alt"></i> Module 14 - Content
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1AnNEjyX4f4EXmUdkKoYQZIGWkZmjhTsu/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-key"></i> Module 14 - Answer Key
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1C5QHkqgIVaKX8Ro29BiB-ltPzyvtLGly/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-pdf"></i> Module 15 - Front Page
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1dl1wAGuX0LKRgYet8FbfSK4nnzN4dI-Q/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-alt"></i> Module 15 - Content
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1Z1ImqOqXixqb-aYs_XUx6FFHc0EXY6EH/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-key"></i> Module 15 - Answer Key
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/11g_ZsUsDGcVyaMvQ83fC_yGL273saEdD/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-pdf"></i> Module 16 - Front Page
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1PQxP2G4Vq_FWAl9Zr_rOAtY-ZBDDZodd/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-alt"></i> Module 16 - Content
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1WCeb5FBDMZqOuchlC43ovyRZ0J36rpSu/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-key"></i> Module 16 - Answer Key
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1zFr_6aEmOculoeUP3aRDFG2WqwTRV5GW/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-pdf"></i> Module 17 - Front Page
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1Dt_XYcD5myaLaGc71Lcp6M_Cd2htKaoj/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-file-alt"></i> Module 17 - Content
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/11Y5oJNsBTB7kuAif5_62BwX04J0IFWcf/view?usp=drive_link" target="_blank" class="module-link">
+                                        <i class="fas fa-key"></i> Module 17 - Answer Key
+                                    </a>
+                                    <a href="https://docs.google.com/document/d/18Oe-gsG_IPG9cxWoUUa4nleSNp3ofyXm/edit?usp=drive_link&ouid=113325285993240770752&rtpof=true&sd=true" target="_blank" class="module-link">
+                                        <i class="fas fa-clipboard-check"></i> Module 18 - Final Exam
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-tags">
+                        <span class="tag">Instructional Design</span>
+                        <span class="tag">Educational Content</span>
+                        <span class="tag">Curriculum Development</span>
+                        <span class="tag">Assessment Design</span>
+                        <span class="tag">Learning Materials</span>
+                        <span class="tag">Teacher Education</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Skills</h2>
+                <p class="section-subtitle">Professional Expertise</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3>Content Editing</h3>
+                    <ul>
+                        <li>Manuscript refinement</li>
+                        <li>Grammar & syntax correction</li>
+                        <li>Style consistency</li>
+                        <li>Clarity enhancement</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Legal Documentation</h3>
+                    <ul>
+                        <li>Legal terminology</li>
+                        <li>Compliance standards</li>
+                        <li>Case summaries</li>
+                        <li>Court judgments</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Instructional Design</h3>
+                    <ul>
+                        <li>Curriculum development</li>
+                        <li>Learning module creation</li>
+                        <li>Assessment design</li>
+                        <li>Educational content</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Quality Assurance</h3>
+                    <ul>
+                        <li>Fact-checking</li>
+                        <li>Accuracy verification</li>
+                        <li>Format compliance</li>
+                        <li>Final review</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:izaestanislao@gmail.com">izaestanislao@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://linkedin.com/in/kriza-ann-estanislao-lpt-1708b3284" target="_blank">Connect with me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Kriza Ann Estanislao. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
-
