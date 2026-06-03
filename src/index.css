@@ -1,0 +1,149 @@
+@import 'tailwindcss';
+
+/* ── Design system: Apple HIG / "Frosted Precision" ──
+   Clean light surfaces, Apple system grays, signature blue, frosted glass. */
+@theme {
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Inter', 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif;
+
+  /* Neutrals (Apple) */
+  --color-bg: #ffffff;
+  --color-fog: #f5f5f7; /* Apple section gray */
+  --color-ink: #1d1d1f; /* near-black text */
+  --color-ink-soft: #6e6e73; /* secondary gray */
+  --color-ink-faint: #86868b; /* tertiary gray */
+  --color-line: #d2d2d7; /* hairline border */
+
+  /* Accent (Apple blue) */
+  --color-blue: #0071e3;
+  --color-blue-dark: #0066cc;
+  --color-blue-bright: #0a84ff;
+
+  /* Dark surfaces */
+  --color-night: #000000;
+  --color-night-soft: #1d1d1f;
+}
+
+@keyframes meshDrift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -3%, 0) scale(1.08);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    letter-spacing: -0.025em;
+    line-height: 1.06;
+    font-weight: 600;
+  }
+
+  ::selection {
+    background-color: var(--color-blue);
+    color: #fff;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible {
+    outline: 4px solid color-mix(in srgb, var(--color-blue) 55%, transparent);
+    outline-offset: 2px;
+    border-radius: 8px;
+  }
+}
+
+@layer components {
+  /* Frosted glass surface */
+  .glass {
+    background-color: color-mix(in srgb, #ffffff 70%, transparent);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    border: 1px solid color-mix(in srgb, #000000 8%, transparent);
+  }
+
+  .glass-dark {
+    background-color: color-mix(in srgb, #1d1d1f 55%, transparent);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    border: 1px solid color-mix(in srgb, #ffffff 12%, transparent);
+  }
+
+  /* Apple pill buttons */
+  .btn-blue {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 980px;
+    background-color: var(--color-blue);
+    color: #fff;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    transition:
+      background-color 0.25s ease,
+      transform 0.25s ease;
+  }
+  .btn-blue:hover {
+    background-color: var(--color-blue-dark);
+    transform: scale(1.02);
+  }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--color-blue);
+    font-weight: 500;
+    padding: 0.75rem 0.5rem;
+    transition: opacity 0.2s ease;
+  }
+  .btn-ghost:hover {
+    opacity: 0.7;
+  }
+
+  .eyebrow {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
